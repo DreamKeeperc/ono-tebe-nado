@@ -100,10 +100,11 @@
 }
 
 .cover__description {
-  display:flex;
+  display: flex;
+  align-items: center;
   position: relative;
-  bottom: 89px;
-  left: 78px;
+  bottom: 100px;
+  padding-left: 80px;
 }
 
 .cover__description-text {
@@ -111,18 +112,19 @@
   font-size: 22px;
   font-weight: 400;
   word-spacing: 20px;
+  min-width: 637px;
+  word-spacing: 18px;
 }
 
 .bet-button {
   text-transform: uppercase;
   font-size: 22px;
-  position: relative;
   left: 71px;
-  bottom: 12px;
-  width: 256px;
-  height: 51px;
+  min-width: 256px;
+  min-height: 51px;
   border: 1px #FFF solid;
   color: white;
+  margin-left: 80px;
   background: rgba(0, 0, 0, 0.1);
 }
 
@@ -142,7 +144,7 @@
 
 .lots__card-list {
   display: flex;
-  margin-left: 24px;
+  margin-left: 25px;
   gap: 25px;
   list-style-type: none;
 }
@@ -203,14 +205,14 @@
 }
 
 .lots__look-more-link {
-  margin-left: 62px;
-  margin-top: 6px;
+  margin-top: 1px;
+  margin-left: 64px;
   text-decoration-line: underline;
   font-size: 20px;
+  
 }
 
 .about {
-  width: 100%;
   margin: 146px 24px;
   display: grid;
   grid-template-columns: 334px auto;
@@ -228,7 +230,7 @@
   display:flex;
   flex-direction: column;
   gap: 100px;
-  margin-top: 135px;
+  margin-top: 133px;
 }
 
 .about__logo {
@@ -254,17 +256,21 @@
   display:flex;
   flex-direction: column;
   gap: 25px;
+  word-spacing: 1px;
 }
 
 .about__text {
-  font-size: 20px
+  font-size: 20px;
+  min-width: 705px;
 }
 
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 185px;
-  margin: 180px 50px;
+  margin: 175px 50px;
+  padding-bottom: 88px;
+  padding-top: 4px;
 }
 
 .footer__links-list {
@@ -272,6 +278,8 @@
   flex-direction: column;
   list-style: none;
   align-items: center;
+  min-height: 64px;
+  min-width: 149px;
 }
 
 .footer__links-list-item_no-bullit {
@@ -292,10 +300,14 @@
   display:flex;
   flex-direction: row;
   gap: 48px;
-  width: 240px;
-  height: 48px;
+  min-width: 240px;
+  min-height: 48px;
 }
 
 .footer__social-list-item {
   list-style: none;
+}
+
+* {
+  outline: 1px solid red;
 }
