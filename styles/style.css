@@ -17,7 +17,7 @@
   list-style: none;
 }
 
-.nav__link_active, .address__link_no-underline{
+.nav__link_active, .address__link_no-underline {
   text-decoration: none;
 }
 
